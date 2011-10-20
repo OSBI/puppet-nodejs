@@ -18,11 +18,11 @@ class nodejs {
                 
         package { "npm" :
         	ensure => present,        
-        	require => Apt::Sources_list["npm"],
+        	require => [Apt::Sources_list["npm"], Apt::Key["FD4B2702"]],
         }
 
 		package { "nodejs" :
         	ensure => present,
-        	require => Apt::Sources_list["node"],        
+        	require => [Apt::Sources_list["node"], Apt::Key["C7917B12"]],   
         }
 }
