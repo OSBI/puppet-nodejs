@@ -10,7 +10,7 @@ class nodejs {
                 
         package { "npm" :
         	ensure => present,        
-        	require => apt::Sources_list["npm"],
+        	require => Apt::Sources_list["npm"],
         }
 
 		package { "nodejs" :
