@@ -1,4 +1,4 @@
-class node {
+class nodejs {
 
         apt::sources_list { "npm":
                 content => "deb http://ppa.launchpad.net/gias-kay-lee/npm/ubuntu natty main"
